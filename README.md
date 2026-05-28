@@ -36,7 +36,7 @@ Displays algorithm specs, a step-by-step usage guide, and all 4 official test ve
 
 > Enter a 64-bit plaintext and key in hex, choose a mode, and run.
 
-![Encrypt/Decrypt Tab](screenshots/tab1_encrypt.png)
+![Encrypt/Decrypt Tab](tab1_encrypt.png)
 
 - Supports both 80-bit and 128-bit keys
 - Shows the result with execution time in µs
@@ -48,7 +48,7 @@ Displays algorithm specs, a step-by-step usage guide, and all 4 official test ve
 
 > Flip a single bit and watch ~50% of the ciphertext change.
 
-![Avalanche Tab](screenshots/tab2_avalanche.png)
+![Avalanche Tab](tab2_avalanche.png)
 
 - Flip any bit (0–63) in the plaintext or the key
 - Colour-coded bit bar shows exactly which ciphertext bits changed
@@ -60,7 +60,7 @@ Displays algorithm specs, a step-by-step usage guide, and all 4 official test ve
 
 > Encrypt the same plaintext with an 80-bit and a 128-bit key side by side.
 
-![Key Comparison Tab](screenshots/tab3_compare.png)
+![Key Comparison Tab](tab3_compare.png)
 
 - Compares outputs, timing, and security levels
 - Shows how many bits differ between the two ciphertexts
