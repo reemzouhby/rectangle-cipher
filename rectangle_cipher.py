@@ -1,6 +1,6 @@
 """
 =============================================================================
-RECTANGLE Lightweight Block Cipher — Correct Python Implementation
+RECTANGLE Lightweight Block Cipher
 =============================================================================
 Algorithm  : RECTANGLE (SP-network, bit-sliced design)
 Block size : 64 bits
@@ -211,7 +211,7 @@ def key_schedule_80(master_key: int) -> list:
 
     After the loop, extract the final subkey SK_25 = [Row0, Row1, Row2, Row3].
 
-    Source: Section 2.3 of the paper.
+
     """
     # Unpack 80-bit key into five 16-bit rows (Row0 = LSB)
     rows = [(master_key >> (16 * i)) & 0xFFFF for i in range(5)]
@@ -261,8 +261,6 @@ def key_schedule_128(master_key: int) -> list:
              Row2' = (Row2 <<< 16) XOR Row3
              Row3' = Row0
       4. XOR RC[r] into lowest 5 bits of Row0
-
-    Source: Section 2.3 of the paper.
     """
     # Unpack 128-bit key into four 32-bit rows (Row0 = LSB)
     rows = [(master_key >> (32 * i)) & 0xFFFFFFFF for i in range(4)]
@@ -592,7 +590,7 @@ def interactive_demo():
 #   back = decrypt(ct, key, key_bits=80)   # → 0x0000000000000000
 #
 #   Run tests:  python rectangle_cipher.py
-#   Run app:    streamlit run rectangle_app.py
+
 if __name__ == "__main__":
     all_passed = run_tests()
     print()
