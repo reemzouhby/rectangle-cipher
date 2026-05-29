@@ -1,12 +1,12 @@
 """
 RECTANGLE Lightweight Block Cipher — Streamlit Interactive App
 """
-
+#   Run app:    streamlit run rectangle_app.py
 import streamlit as st
 import time
 
 # ─────────────────────────────────────────────
-# RECTANGLE CIPHER ENGINE (embedded)
+# RECTANGLE CIPHER
 # ─────────────────────────────────────────────
 
 SBOX = [0x6,0x5,0xC,0xA,0x1,0xE,0x7,0x9,0xB,0x0,0x3,0xD,0x8,0xF,0x4,0x2]
